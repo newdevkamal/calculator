@@ -2,7 +2,7 @@ import { GroupedTodos, todos } from "./types";
 
 
 export default function categorizeByDate(data:todos[]){
-    const today=new Date().toISOString().split('T')[0];
+    //const today=new Date().toISOString().split('T')[0];
     const grouped = data.reduce((accumulator:GroupedTodos, item) => {
         if (false){
           return accumulator

@@ -11,6 +11,7 @@ import {
   SheetHeader,
 } from '../components/ui/sheet';
 import { cn } from '@/lib/utils';
+import HeaderAddTodoButton from '@/features/addTodo/components/HeaderAddTodoButton';
 
 
 export default function Header() {
@@ -102,9 +103,7 @@ export default function Header() {
         </Link>
 
         <div className='md:hidden'>
-            <Button>
-               + Add
-            </Button>
+            <HeaderAddTodoButton/>
         </div>
 
         

@@ -1,13 +1,13 @@
-import { getTodo } from "@/features/displayTodo/api/client";
-import { TodoCards } from "@/features/displayTodo/components/TodoCards";
-import { GroupedTodos, TodoListByDate } from "@/utils/types";
+import Home from "./Home";
 
-export default async function Home() {
-  const data:TodoListByDate=await getTodo()
-  console.log(data)
+export default async function Page() {
+  
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/getTodo`, { cache: "no-store" }); 
+    const {data}=await res.json()
+
   return (
     <>
-      <TodoCards data={data}/>
+      <Home data={data}/>
     </>
   );
 }

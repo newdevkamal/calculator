@@ -1,12 +1,13 @@
+import CardAddTodoButton from '@/features/addTodo/components/CardAddTodoButton';
 import TodoItem from '@/features/displayTodo/components/TodoItem'
-import {PlusIcon} from "lucide-react";
+
 
 type TodosProps = {
     data: {todoName:string; id:string}[];
     date: string;
 }
 
-const TodoList = ({data,date}:TodosProps) => {
+const TodoCard = ({data,date}:TodosProps) => {
 
     return (
         <div className="p-6 sm:p-15 flex flex-col  rounded-2xl sm:w-[80%] w-full gap-3  bg-[#9affbc]">
@@ -22,15 +23,11 @@ const TodoList = ({data,date}:TodosProps) => {
                 ))}
             </div>
             <div className='flex flex-col justify-between items-center mt-6 '>
-                <button className="btn btn-circle bg-[#09ADFF] border-0"
-                       
-                        >
-                    <PlusIcon className='font-bold'/>
-                </button>
-            </div>
+                <CardAddTodoButton cardId={date}/>
+             </div>
         
         </div>
     );
 }
 
-export default TodoList;
+export default TodoCard;
