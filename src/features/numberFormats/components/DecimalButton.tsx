@@ -4,11 +4,15 @@ import React from 'react'
 
 export default function DecimalButton() {
 
-const addEnterdValueToStore=enterdValueStore(state=>state.addEnterdValueToStore)
+  const addEnterdValueToStore=enterdValueStore(state=>state.addEnterdValueToStore)
+  
+    const enterdValue=enterdValueStore(state=>state.value)
 
-  const handleButtonClick=()=>{
-    addEnterdValueToStore(".")
-  }
+    const handleButtonClick=()=>{
+        if(!enterdValue.includes(".")){
+          addEnterdValueToStore(".")
+        }
+    }
   return (
     <div className='flex justify-center items-center'>
          <button className='bg-amber-200 text-background 

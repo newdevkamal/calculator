@@ -1,12 +1,15 @@
 "use client"
+
 import { enterdValueStore } from '@/store/enterdValueStore'
 import React from 'react'
 
 export default function ClearLastNumberButton() {
+
   const clearNumber=enterdValueStore((state)=>state.clearNumber)
 
   const handleButtonClick=()=>{
     clearNumber()
+   
   }
     
   return (
@@ -17,7 +20,7 @@ export default function ClearLastNumberButton() {
                         rounded-full cursor-pointer hover:brightness-85 active:scale-90 transition-transform duration-100
       '          onClick={handleButtonClick} >
      
-            {"C"}
+            {"CE"}
         </button>
       </div>
     </>

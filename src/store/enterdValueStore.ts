@@ -5,6 +5,7 @@ interface enteredValueStoreState{
     addEnterdValueToStore:(value:string)=>void;
     clearLastEnter:()=>void;
     clearNumber:()=>void;
+    resetValue:(newValue:string)=>void,
     
 }
 
@@ -13,5 +14,6 @@ export const enterdValueStore=create<enteredValueStoreState>((set)=>({
     value:"",
     addEnterdValueToStore:(number)=>set((state)=>({value:state.value+number})),
     clearLastEnter:()=>set((state)=>({value:state.value.slice(0,-1)})),
-    clearNumber:()=> set({value:""})
+    clearNumber:()=> set({value:""}),
+    resetValue:(newValue)=>set(()=>({value:newValue})),
 }))

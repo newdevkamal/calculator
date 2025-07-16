@@ -1,12 +1,14 @@
 "use client"
+
 import { enterdValueStore } from '@/store/enterdValueStore'
 import React from 'react'
 
 export default function ClearLastButton() {
   const clearLastEnter=enterdValueStore(state=>state.clearLastEnter)
-
+  
   const handleButtonClick=()=>{
     clearLastEnter()
+   
   }
     
   return (
