@@ -10,7 +10,6 @@ export default function EqualButton() {
     const enterdValue=enterdValueStore(state=>state.value)
     const clearEnterdValue=enterdValueStore(state=>state.clearNumber)
 
-    const operationsArr=arithmaticValueStore(state=>state.operationsArr)
     const clearOperationsArr=arithmaticValueStore(state=>state.clearOperationsArr)
     const addToOperationArr=arithmaticValueStore(state=>state.addToOperationArr)
     const setAnswer= arithmaticValueStore(state=>state.setAnswer)

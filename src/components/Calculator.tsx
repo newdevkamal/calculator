@@ -3,11 +3,9 @@ import DisplayEnteredValue from '@/features/displayEnteredValue/component/Displa
 import ClearAllButton from '@/features/clearEnteredValue/components/ClearAllButton'
 import ClearLastNumberButton from '@/features/clearEnteredValue/components/ClearLastNumberButton'
 import ClearLastButton from '@/features/clearEnteredValue/components/ClearLastButton'
-import DevideButton from '@/features/doArithmatics/components/DevideButton'
+
 import NumberButton from './NumberButton'
-import MultifyButton from '@/features/doArithmatics/components/MultifyButton'
-import SubtractButton from '@/features/doArithmatics/components/SubtractButton'
-import AddButton from '@/features/doArithmatics/components/AddButton'
+
 import DecimalButton from '@/features/numberFormats/components/DecimalButton'
 import NegativePositiveButton from '@/features/numberFormats/components/NegativePositiveButton'
 import EqualButton from '@/features/doArithmatics/components/EqualButton'

@@ -4,7 +4,7 @@ interface arithmaticValueStoreState{
     operationsArr:string[],
     addToOperationArr:(item:string)=>void,
     clearOperationsArr:()=>void,
-    answer:Number,
+    answer:number,
     setAnswer:(answer:number)=>void,
     displayingAnswer:string,
     setDisplayingAnswer:(answer:string)=>void
